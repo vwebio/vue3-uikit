@@ -1,5 +1,5 @@
 <template>
-  <h3>Accordion to Tabs - mobile first</h3>
+  <h3>Accordion to Tabs</h3>
   <section class="accordion">    
     <!-- Tab заголовки -->
     <section class="accordion-tabs">
