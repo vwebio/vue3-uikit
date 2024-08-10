@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>Variants</h3>
-    <div class="flex">
+    <div class="flex-block">
       <div v-for="variant in variantClasses" :key="variant" class="btn-wrapper">
         <button
           :class="['btn', variant]"
@@ -14,7 +14,7 @@
     </div>
 
     <h3>Rounded</h3>
-    <div class="flex">
+    <div class="flex-block">
       <div
         v-for="variant in variantClasses"
         :key="`rounded-${variant}`"
@@ -33,7 +33,7 @@
     </div>
 
     <h3>Outlined</h3>
-    <div class="flex">
+    <div class="flex-block">
       <div
         v-for="variant in variantClasses"
         :key="`outlined-${variant}`"
@@ -52,7 +52,7 @@
     </div>
 
     <h3>Rounded & Outlined</h3>
-    <div class="flex">
+    <div class="flex-block">
       <div
         v-for="variant in variantClasses"
         :key="`rounded-outlined-${variant}`"
@@ -72,7 +72,7 @@
     </div>
 
     <h3>Disabled</h3>
-    <div class="flex">
+    <div class="flex-block">
       <div
         v-for="variant in variantClasses"
         :key="`disabled-${variant}`"
@@ -91,7 +91,7 @@
     </div>
 
     <h3>Sizes</h3>
-    <div class="flex">
+    <div class="flex-block">
       <div v-for="size in sizeClasses" :key="size" class="btn-wrapper">
         <button :class="['btn', 'btn-primary', size]" @click="handleClick">
           <slot>{{ size.replace("btn-", "") }}</slot>
@@ -274,4 +274,5 @@ export default {
   font-size: 18px;
   padding: 14px 28px;
 }
+
 </style>
