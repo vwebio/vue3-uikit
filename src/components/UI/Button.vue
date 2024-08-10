@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Variants</h3>
+    <h3>Base</h3>
     <div class="flex-block">
       <div v-for="variant in variantClasses" :key="variant" class="btn-wrapper">
         <button
