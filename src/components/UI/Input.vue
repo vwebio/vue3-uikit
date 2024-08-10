@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Поиск</h3>
+    <h3>Search</h3>
     <div class="input-wrapper">
       <div class="flex">
         <input
@@ -21,7 +21,7 @@
       </p>
     </div>
 
-    <h3>Поле с подсказкой</h3>
+    <h3>Field with Tooltip</h3>
     <div class="input-wrapper">
       <input
         v-model="tooltipInput"
@@ -61,7 +61,7 @@
       </p>
     </div>
 
-    <h3>Пароль</h3>
+    <h3>Password</h3>
     <div class="input-wrapper">
       <input
         v-model="password"
@@ -106,7 +106,7 @@
       </p>
     </div>
 
-    <h3>Дата</h3>
+    <h3>Date</h3>
     <div class="input-wrapper">
       <input
         v-model="date"
@@ -133,7 +133,7 @@
       </p>
     </div>
 
-    <h3>Выбор (Select)</h3>
+    <h3>Select</h3>
     <div class="input-wrapper">
       <select
         v-model="selectedOption"
