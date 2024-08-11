@@ -9,18 +9,21 @@
   </template>
   
   <script>
+
   export default {
     name: 'Sidebar',
     data() {
       return {
         elements: [
           'Button',
-          'Input',
-          'Checkbox',
-          'Radio',
-          'Select',
+          'Input',          
           'Modal',
           'Card',
+          'Accordion',
+          'Badge',
+          'Pagination',
+          'Breadcrumb',
+          'Progress',
         ],
       };
     },
@@ -50,6 +53,14 @@
   
   .sidebar a:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+
+    .sidebar {
+      width: auto;
+    }
+
   }
   </style>
   
