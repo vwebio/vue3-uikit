@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-      <h1>UI Kit - VUE 3</h1>
+      <h1><a href="/" title="Home">UI Kit - VUE 3</a></h1>
     </header>
   </template>
   
@@ -16,6 +16,14 @@
     color: white;
     padding: 16px;
     text-align: center;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
   }
   </style>
   
