@@ -28,13 +28,13 @@
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Компиляция и горячая перезагрузка для разработки
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Компиляция и минификация для продакшн
 
 ```sh
 npm run build
