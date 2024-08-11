@@ -1,16 +1,28 @@
-# vue3-ui-kit
+# Проект UI Kit
 
-This template should help get you started developing with Vue 3 in Vite.
+## Описание
 
-## Recommended IDE Setup
+Этот проект является демонстрационным приложением, созданным на основе Vue 3 с использованием Composition API. Проект включает в себя набор UI-компонентов, которые могут быть использованы для построения пользовательского интерфейса.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### Основные файлы и структура
 
-## Customize configuration
+- **App.vue**: Главный компонент приложения, включающий Header, Sidebar, основное содержимое и Footer.
+- **views/Elements.vue**: Страница для отображения различных UI-компонентов, выбранных через маршрутизацию.
+- **components/UI**: Каталог, содержащий отдельные UI-компоненты, такие как Card, Button, Input и другие.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Доступные UI-компоненты
 
-## Project Setup
+- **Accordion.vue**: Табы в пк версии и Аккордеон для мобильной.
+- **Badge.vue**: Бейдж для отображения небольших меток или уведомлений.
+- **Breadcrumb.vue**: Хлебные крошки для навигации по сайту.
+- **Button.vue**: Кнопки, которая может быть использована для различных действий.
+- **Card.vue**: Карточки для отображения информации в структурированном виде.
+- **Input.vue**: Поля - поиска, email, пароля и др.
+- **Modal.vue**: Модальное окно для отображения всплывающего контента.
+- **Pagination.vue**: Пагинация для разделения контента на страницы.
+- **Progress.vue**: Индикаторы прогресса.
+
+## Установка и запуск
 
 ```sh
 npm install
