@@ -1,8 +1,8 @@
 <template>
     <Header />
     <div class="main-layout">
-      <Sidebar />
-      <router-view />
+        <Sidebar class="sidebar" />
+        <router-view class="content" />
     </div>
     <Footer />
 </template>
@@ -13,11 +13,11 @@ import Sidebar from './components/Sidebar.vue';
 import Footer from './components/Footer.vue';
 
 export default {
-  components: {
-    Header,
-    Sidebar,
-    Footer,
-  },
+    components: {
+        Header,
+        Sidebar,
+        Footer,
+    },
 };
 </script>
 
@@ -25,23 +25,38 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 #app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .main-layout {
-  display: flex;
-  flex: 1;
+    display: flex;
+    flex: 1;
 }
 
-router-view {
-  flex: 1;
-  padding: 16px;
+.sidebar {
+    width: 250px;
+}
+
+.content {
+    /* flex: 1; */
+    padding: 16px;
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    .main-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
 }
 </style>
